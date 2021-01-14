@@ -551,16 +551,67 @@
 <h4 id="N10726">A standard under development and expected to be released sometime in the early 2020s is 5G. The premise of this standard is that Internet connectivity has become more of a requirement than a luxury. Although the cellular market has moved away from mobile WiMAX, the infrastructure is still available throughout the world for fixed wireless. The Internet of things (IoT) is a phrase used to describe the convergence that is taking place now in the 21st century, when any and all capable devices will be connected to the Internet. From smart homes and their subsystems, to appliances, to automobiles with Wi-Fi and GPS, users will be deriving benefits from broadband technologies and “always on” connectivity. The 5G standard and other major initiatives in the fiber-optic and Wi-Fi industries are promising to move toward that end. Groups such as the WiMAX Forum and many other industry leaders are heavily investing in bringing together device connectivity under the IoT umbrella.</h4>
 <h4>5G是正在開發中的標準，預計將在2020年代初發布。 該標準的前提是，Internet連接已成為一種需求，而非奢侈。 儘管蜂窩市場已經脫離了移動WiMAX，但該基礎設施仍在全球範圍內用於固定無線。 物聯網（IoT）是一個短語，用於描述21世紀當今正在發生的融合，屆時，任何功能強大的設備都將連接到Internet。 從智能家居及其子系統，到家用電器，再到具有Wi-Fi和GPS的汽車，用戶將從寬帶技術和“始終在線”的連接中受益。 光纖和Wi-Fi行業中的5G標準和其他主要舉措有望朝著這一目標邁進。 WiMAX論壇等組織和許多其他行業領導者正在大力投資，以在IoT框架下整合設備連接性。</h4>
 <h4>As we previously mentioned, both cable and xDSL networks benefit by incorporating fiber into the back end (known as the backhaul ), which increases the overall bandwidth available to the customer. Another major benefit of fiber is its resistance to electromagnetic interference.</h4>
-<h4>如前所述，電纜和xDSL網絡都受益於將光纖集成到後端（稱為回程）中，從而增加了可供客戶使用的整體帶寬。 纖維的另一個主要優點是它具有抗電磁干擾的能力。</h4><h3>Internet Connectivity</h3>
-<p>Overview 總攬</p>
+<h4>如前所述，電纜和xDSL網絡都受益於將光纖集成到後端（稱為回程）中，從而增加了可供客戶使用的整體帶寬。 纖維的另一個主要優點是它具有抗電磁干擾的能力。</h4>
+<p>Internet Connectivity</p>
+<h4>Overview 總攬</h4>
 <div class="opacity">
 <div class="content shadowTwo" role="main">
 <div class="contentContain">
 <div class="section" id="N1066B">
-<div class="sectionContain">In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.
-<p>在本模塊中，我們將討論網絡的各種類型的Internet連接。 本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。 每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。 此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</p>
+<h4 class="sectionContain">In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.在本模塊中，我們將討論網絡的各種類型的Internet連接。 本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。 每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。 此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</h4>
+<h1>HW3</h1>
+<h2>Rock Paper Scissors</h2>
+<p>Exercise 8 (and Solution)<br/>Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)</p>
+<p>Remember the rules:</p>
+<p>Rock beats scissors<br/>Scissors beats paper<br/>Paper beats rock<br/>Discussion<br/>Concepts for this week:</p>
+<p>While loops<br/>Infinite loops<br/>Break statements<br/>While loops<br/>We have already discussed for loops, or loops that look sequentially (one by one) at elements in a list. There is a second type of loop that works in a slightly different way called a while loop.</p>
+<p>The idea is simple: while a certain condition is True, keep doing something. For example:</p>
+<p>a = 5<br/>while (a &gt; 0):<br/>print(a)<br/>a -= 1<br/>The output of this code segment is:</p>
+<p>5<br/>4<br/>3<br/>2<br/>1<br/>A particularly useful way to use while loops is checking user input for correctness. For example:</p>
+<p>quit = input('Type "enter" to quit:' )<br/>while quit != "enter":<br/>quit = input('Type "enter" to quit:' )<br/>The uses for this are infinite, and can (and should!) be combined with conditionals to yield the most efficient results.</p>
+<p>Infinite loops<br/>An infinite loop is a loop that never stops. This means that the condition in the beginning of the while loop will always be true.</p>
+<p>For example:</p>
+<p>i = 5<br/>while i &gt; 0:<br/>print("Inside the loop")<br/>What will happen is the loop will print out the phrase “Inside the loop” forever and ever. If you are running your computer, you will have to “kill the program” to stop it. Each operating system has a different way of “killing a program” to get out of an infinite loop.</p>
+<p>On Linux: in the terminal, type “CTRL-C” to kill the program that is currently running in the terminal. If you are using the IDLE Python IDE, then you must press “CTRL-D” to exit your running program. When in doubt, do a Google search before you start programming!</p>
+<p>On Windows: type “CTRL-ALT-DEL” and open the task manager to kill the program.</p>
+<p>On Mac: right-click on the task, and kill the program that is running forever.</p>
+<p>If you find yourself in an infinite loop, your program will never end.</p>
+<p>Break statements<br/>A break statement stops the execution of a loop before the original condition is met. While the use of a break statement will often start an argument about good coding practices, sometimes it is useful.</p>
+<p>For example:</p>
+<p>while True:<span> </span><br/>usr_command = input("Enter your command: ")<br/>if usr_command == "quit":<br/>break<br/>else:<span> </span><br/>print("You typed " + usr_command)<br/>In this case, the break statement is used to break off the “infinite while loop” that we have constructed with the while True statement.</p>
+<p>練習8（和解決方案）<br/>製作兩人石頭剪刀布遊戲。 （提示：要求玩家玩（使用輸入），進行比較，打印出對獲勝者表示祝賀的消息，並詢問玩家是否要開始新遊戲）</p>
+<p>記住規則：</p>
+<p>搖滾剪刀<br/>剪刀打紙<br/>紙打石頭<br/>討論區<br/>本週的概念：</p>
+<p>While循環<br/>無限循環<br/>中斷聲明<br/>While循環<br/>我們已經討論過for循環，或循環（逐個看）列表中元素的循環。還有另一種類型的循環，其工作方式稍有不同，稱為while循環。</p>
+<p>這個想法很簡單：當某個條件為True時，繼續做某事。例如：</p>
+<p>a = 5<br/>而（a&gt; 0）：<br/>打印（a）<br/>-= 1<br/>該代碼段的輸出為：</p>
+<p>5<br/>4<br/>3<br/>2<br/>1個<br/>使用while循環的一種特別有用的方法是檢查用戶輸入的正確性。例如：</p>
+<p>quit = input（“輸入“ enter”以退出：'）<br/>而退出！=“輸入”：<br/>quit = input（“輸入“ enter”以退出：'）<br/>此方法的用途是無限的，並且可以（並且應該！）與條件條件結合使用以產生最有效的結果。</p>
+<p>無限循環<br/>無限循環是永不停止的循環。這意味著while循環開始時的條件將始終為true。</p>
+<p>例如：</p>
+<p>我= 5<br/>當我&gt; 0時：<br/>print（“循環內”）<br/>將會發生的是，循環將永遠打印出短語“ Inside the loop”。如果您正在運行計算機，則必須“殺死該程序”以將其停止。每個操作系統都有不同的“殺死程序”以擺脫無限循環的方式。</p>
+<p>在Linux上：在終端中，鍵入“ CTRL-C”以終止終端中當前正在運行的程序。如果使用的是IDLE Python IDE，則必須按“ CTRL-D”退出正在運行的程序。如有疑問，請在開始編程之前進行Google搜索！</p>
+<p>在Windows上：鍵入“ CTRL-ALT-DEL”並打開任務管理器以終止程序。</p>
+<p>在Mac上：右鍵單擊該任務，然後終止永久運行的程序。</p>
+<p>如果發現自己陷入無限循環，則程序將永遠不會結束。</p>
+<p>中斷聲明<br/>break語句在滿足原始條件之前停止執行循環。儘管使用break語句通常會引發有關良好編碼實踐的爭論，但有時它很有用。</p>
+<p>例如：</p>
+<p>而True：<br/>usr_command = input（“輸入您的命令：”）<br/>如果usr_command ==“ quit”：<br/>打破<br/>其他：<br/>print（“您輸入了” + usr_command）<br/>在這種情況下，break語句用於中斷我們使用while True語句構建的“ while循環無限”。</p>
+<h2>List Comprehensions</h2>
+<p>Exercise 7 (and Solution)Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it. DiscussionConcepts for this week: List comprehensionsList comprehensionsThe idea of a list comprehension is to make code more compact to accomplish tasks involving lists. Take for example this code: years_of_birth = [1990, 1991, 1990, 1990, 1992, 1991] ages = [] for year in years_of_birth: ages.append(2014 - year)And at the end, the variable ages has the list [24, 23, 24, 24, 22, 23]. What this code did was translate the years of birth into ages, and it took us a for loop and an append statement to a new list to do that.Compare to this piece of code:years_of_birth = [1990, 1991, 1990, 1990, 1992, 1991] ages = [2014 - year for year in years_of_birth]The second line here - the line with ages is a list comprehension.It accomplishes the same thing as the first code sample - at the end, the ages variable has a list containing [24, 23, 24, 24, 22, 23], the ages corresponding to all the birthdates.The idea of the list comprehension is to condense the for loop and the list appending into one simple line. Notice that the for loop just shifted to the end of the list comprehension, and the part before the for keyword is the thing to append to the end of the new list.You can also embed if statements into the list comprehension - check out this reference to help you out. There are many examples and a better explanation than I can ever give.</p>
+<p>練習7（和解決方案）<br/>假設我給您提供了一個保存在變量中的列表：a = [1、4、9、16、25、36、49、64、81、100]。編寫一行Python，使用此列表a並創建一個僅包含該列表偶數元素的新列表。</p>
+<p>討論區<br/>本週的概念：</p>
+<p>清單理解<br/>清單理解<br/>列表理解的思想是使代碼更緊湊，以完成涉及列表的任務。以下面的代碼為例：</p>
+<p>出生年限= [1990，1991，1990，1990，1992，1991]<br/> 年齡= []<br/> 出生年份的年份：<br/> ages.append（2014-年）<br/>最後，變量年齡具有列表[24、23、24、24、22、23]。這段代碼所做的就是將出生的歲月轉換成年齡，然後我們使用了for循環，並在新列表中添加了一個append語句來完成此操作。</p>
+<p>比較這段代碼：</p>
+<p>出生年限= [1990，1991，1990，1990，1992，1991]<br/> 年齡= [2014-年出生年數]<br/>這裡的第二行-帶年齡的行是列表理解。</p>
+<p>它完成了與第一個代碼示例相同的操作-最後，ages變量具有一個包含[24、23、24、24、22、23]的列表，這些年齡對應於所有生日。</p>
+<p>列表理解的思想是壓縮for循環，並將列表追加到一條簡單的行中。注意，for循環剛剛移到列表理解的末尾，而for關鍵字之前的部分是要附加到新列表末尾的東西。</p>
+<p>您還可以將if語句嵌入列表理解中-查閱此參考資料對您有所幫助。有許多例子和比我能提供的更好的解釋。</p><h2>String Lists</h2>
+<p>Exercise 6 (and Solution)Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)DiscussionConcepts for this week:List indexingStrings are listsList indexingIn Python (and most programming in general), you start counting lists from the number 0. The first element in a list is “number 0”, the second is “number 1”, etc.As a result, when you want to get single elements out of a list, you can ask a list for that number element:&gt;&gt;&gt; a = [5, 10, 15, 20, 25]&gt;&gt;&gt; a[3]20&gt;&gt;&gt; a[0]5There is also a convenient way to get sublists between two indices:&gt;&gt;&gt; a = [5, 10, 15, 20, 25, 30, 35, 40]&gt;&gt;&gt; a[1:4][10, 15, 20]&gt;&gt;&gt; a[6:][35, 40]&gt;&gt;&gt; a[:-1][5, 10, 15, 20, 25, 30, 35]The first number is the “start index” and the last number is the “end index.”You can also include a third number in the indexing, to count how often you should read from the list:&gt;&gt;&gt; a = [5, 10, 15, 20, 25, 30, 35, 40]&gt;&gt;&gt; a[1:5:2][10, 20]&gt;&gt;&gt; a[3:0:-1][15, 10, 5]To read the whole list, just use the variable name (in the above examples, a), or you can also use [:] at the end of the variable name (in the above examples, a[:]).Strings are listsBecause strings are lists, you can do to strings everything that you do to lists. You can iterate through them:string = "example"for c in string:print "one letter: " + cWill give the result:one letter: eone letter: xone letter: aone letter: mone letter: pone letter: lone letter: eYou can take sublists:&gt;&gt;&gt; string = "example"&gt;&gt;&gt; s = string[0:5]&gt;&gt;&gt; print sexampNow s has the string “examp” in it.Moral of the story: a string is a list.</p>
+<p>練習6（和解決方案）向用戶詢問一個字符串，然後打印出該字符串是否是回文。 （回文是指向前和向後讀取相同字符串的字符串。）討論區本週的概念：列表索引字符串是列表列表索引在Python（以及大多數通用編程）中，您從數字0開始計數列表。列表中的第一個元素是“數字0”，第二個元素是“數字1”，依此類推。結果，當您要從列表中刪除單個元素時，可以向列表中請求該number元素：&gt;&gt;&gt; a = [5，10，15，20，25]&gt;&gt;&gt;一個[3]20&gt;&gt;&gt;一個[0]5還有一種便捷的方法來獲取兩個索引之間的子列表：&gt;&gt;&gt; a = [5，10，15，20，25，30，35，40]&gt;&gt;&gt;一個[1：4][10、15、20]&gt;&gt;&gt;一個[6：][35，40]&gt;&gt;&gt; a [：-1][5、10、15、20、25、30、35]第一個數字是“開始索引”，最後一個數字是“結束索引”。您還可以在索引中包含第三個數字，以計算應該從列表中讀取的頻率：&gt;&gt;&gt; a = [5，10，15，20，25，30，35，40]&gt;&gt;&gt; a [1：5：2][10，20]&gt;&gt;&gt; a [3：0：-1][15、10、5]要讀取整個列表，只需使用變量名（在上面的示例中，a），或者也可以在變量名的末尾使用[：]（在上面的示例中，a [：]）。字符串是列表因為字符串是列表，所以您可以將對列表所做的所有操作都字符串化。您可以遍歷它們：字符串=“示例”對於字符串中的c：打印“一個字母：” + c將給出結果：一個字母：e一個字母：x一個字母：一個字母：m一個字母：p一個字母：l一個字母：e您可以列出子列表：&gt;&gt;&gt;字符串=“示例”&gt;&gt;&gt; s =字符串[0：5]&gt;&gt;&gt;打印範例現在s中有字符串“ examp”。故事的寓意：字符串是一個列表。</p>
 </div>
-</div>
-</div>
+<h2>List Overlap</h2>
+<br/>Exercise 5 (and Solution)<br/>Take two lists, say for example these two: <br/>a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]<br/> b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]<br/>and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.Extras:<br/>Randomly generate two lists to test this<br/>Write this in one line of Python (don’t worry if you can’t figure this out at this point - we’ll get to it soon)<br/>List properties<br/>In other words, “things you can do with lists.”One of the interesting things you can do with lists in Python is figure out whether something is inside the list or not. For example:<br/>&gt;&gt;&gt; a = [5, 10, 15, 20]<br/> &gt;&gt;&gt; 10 in a<br/> True<br/> &gt;&gt;&gt; 3 in a<br/> False<br/>You can of course use this in loops, conditionals, and any other programming constructs.list_of_students = ["Michele", "Sara", "Cassie"]<br/>name = input("Type name to check: ")<br/> if name in list_of_students:<br/> print("This student is enrolled.")<span>練習5（和解決方案） 拿兩個列表，舉例來說，這兩個： a = [1、2、3、5、8、13、21、34、55、89] b = [1、2、3、4、5、6、7、8、9、10、11、12、13] 並編寫一個程序，該程序返回一個列表，該列表僅包含列表之間的公共元素（無重複項）。確保您的程序可以在兩個不同大小的列表上運行。 附加功能： 隨機生成兩個列表進行測試 用Python編寫一行代碼（不要擔心，如果您現在不能解決這個問題，我們會盡快解決） 列出屬性 換句話說，“您可以使用列表執行的操作”。 您可以使用Python中的列表執行的有趣操作之一是確定列表中是否包含某些內容。例如： &gt;&gt;&gt; a = [5，10，15，20] &gt;&gt;&gt; 10在 真正 &gt;&gt;&gt; 3合 假 您當然可以在循環，條件和任何其他編程構造中使用它。 list_of_students = [“米歇爾”，“薩拉”，“卡西”] 名稱=輸入（“要檢查的類型名稱：”） 如果名稱在list_of_students中： 打印（“該學生已入學。”）</span></div>
 </div>
 </div>

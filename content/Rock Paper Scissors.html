@@ -133,18 +133,44 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='Develop.html'>Next</a> >> Develop<br /><h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<br /> <a href='Develop.html'>Next</a> >> Develop</div>
+    <div id="tipue_search_content">HW3 << <a href='HW3.html'>Previous</a> <a href='List Comprehensions.html'>Next</a> >> List Comprehensions<br /><h1>Rock Paper Scissors</h1>
+<p>Exercise 8 (and Solution)<br/>Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)</p>
+<p>Remember the rules:</p>
+<p>Rock beats scissors<br/>Scissors beats paper<br/>Paper beats rock<br/>Discussion<br/>Concepts for this week:</p>
+<p>While loops<br/>Infinite loops<br/>Break statements<br/>While loops<br/>We have already discussed for loops, or loops that look sequentially (one by one) at elements in a list. There is a second type of loop that works in a slightly different way called a while loop.</p>
+<p>The idea is simple: while a certain condition is True, keep doing something. For example:</p>
+<p>a = 5<br/>while (a &gt; 0):<br/>print(a)<br/>a -= 1<br/>The output of this code segment is:</p>
+<p>5<br/>4<br/>3<br/>2<br/>1<br/>A particularly useful way to use while loops is checking user input for correctness. For example:</p>
+<p>quit = input('Type "enter" to quit:' )<br/>while quit != "enter":<br/>quit = input('Type "enter" to quit:' )<br/>The uses for this are infinite, and can (and should!) be combined with conditionals to yield the most efficient results.</p>
+<p>Infinite loops<br/>An infinite loop is a loop that never stops. This means that the condition in the beginning of the while loop will always be true.</p>
+<p>For example:</p>
+<p>i = 5<br/>while i &gt; 0:<br/>print("Inside the loop")<br/>What will happen is the loop will print out the phrase “Inside the loop” forever and ever. If you are running your computer, you will have to “kill the program” to stop it. Each operating system has a different way of “killing a program” to get out of an infinite loop.</p>
+<p>On Linux: in the terminal, type “CTRL-C” to kill the program that is currently running in the terminal. If you are using the IDLE Python IDE, then you must press “CTRL-D” to exit your running program. When in doubt, do a Google search before you start programming!</p>
+<p>On Windows: type “CTRL-ALT-DEL” and open the task manager to kill the program.</p>
+<p>On Mac: right-click on the task, and kill the program that is running forever.</p>
+<p>If you find yourself in an infinite loop, your program will never end.</p>
+<p>Break statements<br/>A break statement stops the execution of a loop before the original condition is met. While the use of a break statement will often start an argument about good coding practices, sometimes it is useful.</p>
+<p>For example:</p>
+<p>while True:<span> </span><br/>usr_command = input("Enter your command: ")<br/>if usr_command == "quit":<br/>break<br/>else:<span> </span><br/>print("You typed " + usr_command)<br/>In this case, the break statement is used to break off the “infinite while loop” that we have constructed with the while True statement.</p>
+<p>練習8（和解決方案）<br/>製作兩人石頭剪刀布遊戲。 （提示：要求玩家玩（使用輸入），進行比較，打印出對獲勝者表示祝賀的消息，並詢問玩家是否要開始新遊戲）</p>
+<p>記住規則：</p>
+<p>搖滾剪刀<br/>剪刀打紙<br/>紙打石頭<br/>討論區<br/>本週的概念：</p>
+<p>While循環<br/>無限循環<br/>中斷聲明<br/>While循環<br/>我們已經討論過for循環，或循環（逐個看）列表中元素的循環。還有另一種類型的循環，其工作方式稍有不同，稱為while循環。</p>
+<p>這個想法很簡單：當某個條件為True時，繼續做某事。例如：</p>
+<p>a = 5<br/>而（a&gt; 0）：<br/>打印（a）<br/>-= 1<br/>該代碼段的輸出為：</p>
+<p>5<br/>4<br/>3<br/>2<br/>1個<br/>使用while循環的一種特別有用的方法是檢查用戶輸入的正確性。例如：</p>
+<p>quit = input（“輸入“ enter”以退出：'）<br/>而退出！=“輸入”：<br/>quit = input（“輸入“ enter”以退出：'）<br/>此方法的用途是無限的，並且可以（並且應該！）與條件條件結合使用以產生最有效的結果。</p>
+<p>無限循環<br/>無限循環是永不停止的循環。這意味著while循環開始時的條件將始終為true。</p>
+<p>例如：</p>
+<p>我= 5<br/>當我&gt; 0時：<br/>print（“循環內”）<br/>將會發生的是，循環將永遠打印出短語“ Inside the loop”。如果您正在運行計算機，則必須“殺死該程序”以將其停止。每個操作系統都有不同的“殺死程序”以擺脫無限循環的方式。</p>
+<p>在Linux上：在終端中，鍵入“ CTRL-C”以終止終端中當前正在運行的程序。如果使用的是IDLE Python IDE，則必須按“ CTRL-D”退出正在運行的程序。如有疑問，請在開始編程之前進行Google搜索！</p>
+<p>在Windows上：鍵入“ CTRL-ALT-DEL”並打開任務管理器以終止程序。</p>
+<p>在Mac上：右鍵單擊該任務，然後終止永久運行的程序。</p>
+<p>如果發現自己陷入無限循環，則程序將永遠不會結束。</p>
+<p>中斷聲明<br/>break語句在滿足原始條件之前停止執行循環。儘管使用break語句通常會引發有關良好編碼實踐的爭論，但有時它很有用。</p>
+<p>例如：</p>
+<p>而True：<br/>usr_command = input（“輸入您的命令：”）<br/>如果usr_command ==“ quit”：<br/>打破<br/>其他：<br/>print（“您輸入了” + usr_command）<br/>在這種情況下，break語句用於中斷我們使用while True語句構建的“ while循環無限”。</p>
+<br />HW3 << <a href='HW3.html'>Previous</a> <a href='List Comprehensions.html'>Next</a> >> List Comprehensions</div>
         
     <!-- footer -->
       <div class="container">
